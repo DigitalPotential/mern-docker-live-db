@@ -12,7 +12,7 @@ function connect() {
   };
 
   mongoose
-    .connect(process.env.DB_URL, options)
+    .connect(process.env.MONGODB_URL, options)
     .then(() => {
       console.log(colors.green.bold("Successfully connected to MongoDB Atlas"));
     })
